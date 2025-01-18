@@ -164,7 +164,7 @@ you can make the objects be clickable and you can add collisions to objects.
 
 ## Syntax
 - [ObjectLibrary](#objectlibrary)
-- # ButtonLibrary
+- [ButtonLibrary](#buttonlibrary)
 - # love
 - # function
 - # print
