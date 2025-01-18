@@ -90,7 +90,7 @@ To create an Object use:
     local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
 ```
 
-the ObjectLibrary has a Force syntax which allows you to move the object.
+the ObjectLibrary has a Force which allows you to move the objects.
 
 ```lua
     local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
