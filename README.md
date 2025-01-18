@@ -9,6 +9,7 @@
 ## Table of Contents
 
 - [Examples](#examples)
+- [Syntax](#syntax)
 
 ## Examples
 
@@ -160,3 +161,11 @@ you can make the objects be clickable and you can add collisions to objects.
         end
     end
 ```
+
+## Syntax
+- # ObjectLibrary
+- # ButtonLibrary
+- # love
+- # function
+- # print
+- # for
