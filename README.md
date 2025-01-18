@@ -15,7 +15,7 @@
 
 Nya Engine uses the default LÖVE syntax and some additional custom libraries.
 
-- ButtonLibrary
+- # ButtonLibrary
 It's a library for easy creation of buttons.
 
 To create a button use ButtonLibrary:new(x, y, width, height, text, function, image(optional))
@@ -82,7 +82,7 @@ This is the whole example for creating buttons:
 
 This code makes it so when the button is pressed then it changes the position.
 
-- ObjectLibrary
+- # ObjectLibrary
 
 This library is responsible for all the objects in the game. 
 To create an Object use:
@@ -163,7 +163,7 @@ you can make the objects be clickable and you can add collisions to objects.
 ```
 
 ## Syntax
-- # ObjectLibrary
+- [ObjectLibrary](#objectlibrary)
 - # ButtonLibrary
 - # love
 - # function
