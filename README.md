@@ -87,79 +87,18 @@ This code makes it so when the button is pressed then it changes the position.
 This library is responsible for all the objects in the game. 
 To create an Object use:
 ```lua 
-    local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
-```
-
-the ObjectLibrary has a Force which allows you to move the objects.
-
-```lua
-    local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
-
-    function love.update(dt)
-        if love.keyboard.isDown("w") then
-            Object:applyForce(100, 0) -- moves the object's x position by 100
-        end
-    end
-
-    function love.draw()
-        Object:draw()
-    end
-```
-
-the ObjectLibrary also has built-in physics.
-
-```lua
-    local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
-
-    function love.update(dt)
-        Object:update(dt)
-
-        if love.keyboard.isDown("w") then
-            Object:applyForce(100, 0) -- moves the object's x position by 100
-        end
-    end
-
-    function love.draw()
-        Object:draw()
-    end
-```
-
-you can make the objects be clickable and you can add collisions to objects.
-
-```lua
-    local Object = ObjectLibrary:new(150, 100, 50, 50) -- x, y, width, height, imagePath
-    local Floor = ObjectLibrary:new(300, 100, 100, 20) -- Floor to test the collision
-
-    function love.load()
-        Floor.gravity = 0 -- disable the gravity for the floor
-    end
-
-    function love.update(dt)
-        -- enables object physics
-        Object:update(dt)
-
-        if love.keyboard.isDown("w") then
-            Object:applyForce(100, 0) -- moves the object's x position by 100
-        end
-    end
-
-    function love.draw()
-        Object:draw()
-
-        Object:resolveCollision(Floor) -- Check if the Object is colliding with the floor
-
-        -- If Object is colliding, print text
-        if Object:checkCollision(Floor) then
-            print("Object is colliding with the floor")
-        end
-    end
-
-    -- check if object is pressed
-    function love.mousepressed(x, y, button, istouch, presses)
-        if Object:isClicked(x, y) then
-            print("Object Pressed")
-        end
-    end
+    local newObject = GameObject:new({
+        x = 150,
+        y = 100,
+        width = 50,
+        height = 50,
+        icon = nil,
+        name = "Object " .. tostring(#ObjectList + 1),
+        isCollidable = false,
+        texture = nil,
+        character = false,
+        -- you can add more stuff here
+    })
 ```
 
 ## Syntax
