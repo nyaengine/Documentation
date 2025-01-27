@@ -93,7 +93,7 @@ To create an Object use:
         width = 50,
         height = 50,
         icon = nil,
-        name = "Object " .. tostring(#ObjectList + 1),
+        name = "Object",
         isCollidable = false,
         texture = nil,
         character = false,
