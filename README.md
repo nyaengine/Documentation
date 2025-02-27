@@ -101,10 +101,13 @@ To create an Object use:
     })
 ```
 
+- # love
+LÖVE syntax is available [here](https://www.love2d.org/wiki/Main_Page)
+
 ## Syntax
 - [ObjectLibrary](#objectlibrary)
 - [ButtonLibrary](#buttonlibrary)
-- # love
+- [love](#love)
 - # function
 - # print
 - # for
