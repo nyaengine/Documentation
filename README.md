@@ -101,6 +101,25 @@ To create an Object use:
     })
 ```
 
+- # Parallex Backgrounds
+This library is responsible for parallex background rendering.
+
+```lua
+function love.load()
+  local background = ParallexBackground:new()
+  background:addLayer("assets/background_layer1.png", 20) -- Add a slow-moving layer
+  background:addLayer("assets/background_layer2.png", 40) -- Add a faster-moving layer
+end
+
+function love.update(dt)
+  background:update(dt)
+end
+
+function love.draw()
+  background:draw()
+end
+```
+
 - # love
 LÖVE syntax is available [here](https://www.love2d.org/wiki/Main_Page)
 
